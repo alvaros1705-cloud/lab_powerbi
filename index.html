@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Laboratorio Interactivo: Huella Tecnológica Empresarial con Power BI</title>
+<link rel="stylesheet" href="assets/style.css"></head>
+<body>
+<button id="menu" class="btn" aria-label="Abrir menú">☰ Menú</button>
+<aside id="side"><h1>Laboratorio Power BI<br><small>Huella tecnológica empresarial</small></h1>
+<label for="q" class="sr" style="font-size:12px">Buscar contenido</label><input id="q" type="search" placeholder="Buscar en la guía…">
+<div class="bar" role="progressbar" aria-label="Progreso" style="margin-top:12px"><i id="pb"></i></div><small id="pt"></small>
+<nav aria-label="Secciones"><ul id="nav"></ul></nav>
+<button class="btn s sm" id="th">Cambiar tema</button> <button class="btn s sm" onclick="print()">Imprimir / PDF</button></aside>
+<main></main><div id="tip"></div>
+<script src="assets/data.js"></script><script src="assets/app.js"></script>
+</body></html>
