@@ -4,11 +4,11 @@
 <link rel="stylesheet" href="assets/style.css"></head>
 <body>
 <button id="menu" class="btn" aria-label="Abrir menú">☰ Menú</button>
-<aside id="side"><h1>Laboratorio Power BI<br><small>Huella tecnológica empresarial</small></h1>
-<label for="q" class="sr" style="font-size:12px">Buscar contenido</label><input id="q" type="search" placeholder="Buscar en la guía…">
+<aside id="side"><div class="language-switch" role="group" aria-label="Idioma / Language"><span data-i18n="languageLabel">Idioma / Language</span><button type="button" class="lang-btn active" data-lang="es" aria-pressed="true"><span class="flag" aria-hidden="true">🇨🇴</span><span>Español</span></button><button type="button" class="lang-btn" data-lang="en" aria-pressed="false"><span class="flag" aria-hidden="true">🇬🇧</span><span>English</span></button></div><h1 data-i18n="siteTitle">Laboratorio Power BI<br><small>Huella tecnológica empresarial</small></h1>
+<label for="q" class="sr" style="font-size:12px" data-i18n="searchLabel">Buscar contenido</label><input id="q" type="search" placeholder="Buscar en la guía…" data-i18n-placeholder="searchPlaceholder">
 <div class="bar" role="progressbar" aria-label="Progreso" style="margin-top:12px"><i id="pb"></i></div><small id="pt"></small>
 <nav aria-label="Secciones"><ul id="nav"></ul></nav>
-<button class="btn s sm" id="th">Cambiar tema</button> <button class="btn s sm" onclick="print()">Imprimir / PDF</button></aside>
+<button class="btn s sm" id="th" data-i18n="theme">Cambiar tema</button> <button class="btn s sm" id="printBtn" data-i18n="print">Imprimir / PDF</button></aside>
 <main></main><div id="tip"></div>
 <script src="assets/data.js"></script><script src="assets/app.js"></script>
 </body></html>

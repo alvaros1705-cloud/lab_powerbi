@@ -5,6 +5,12 @@ body{margin:0;font:16px/1.55 system-ui,"Segoe UI",Roboto,sans-serif;background:v
 a{color:var(--pr)}button,select,input,textarea{font:inherit;color:inherit}
 #side{position:fixed;inset:0 auto 0 0;width:270px;background:var(--card);border-right:1px solid var(--bd);padding:14px;overflow:auto;z-index:5}
 #side h1{font-size:15px;margin:0 0 8px;color:var(--pr)}
+.language-switch{display:flex;align-items:center;gap:5px;flex-wrap:wrap;margin:0 0 14px;padding:7px;border:1px solid var(--bd);border-radius:16px;background:var(--sh);font-size:12px}
+.language-switch>span{color:var(--mu);padding:0 5px;flex:1 0 100%;}
+.lang-btn{display:flex;align-items:center;justify-content:center;gap:6px;flex:1;min-width:0;border:1px solid transparent;border-radius:10px;padding:7px 8px;background:transparent;color:var(--tx);font-size:13px;font-weight:650;cursor:pointer;white-space:nowrap}
+.lang-btn .flag{font-size:20px;line-height:1}
+.lang-btn.active{background:var(--card);border-color:var(--bd);box-shadow:0 1px 2px #00000012}
+.lang-btn:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
 #q{width:100%;padding:8px;border:1px solid var(--bd);border-radius:8px;background:var(--bg)}
 #nav{list-style:none;margin:10px 0;padding:0}
 #nav button{display:block;width:100%;text-align:left;border:0;background:none;padding:7px 10px;border-radius:8px;cursor:pointer;font-size:14px}
@@ -42,4 +48,5 @@ svg text{fill:var(--tx);font-size:11px}.bb{fill:var(--pr)}.bb.d{opacity:.25}.bb.
 .chk{display:flex;gap:8px;align-items:flex-start;margin:4px 0}
 :focus-visible{outline:3px solid var(--ac);outline-offset:2px}
 @media(max-width:800px){#side{transform:translateX(-100%);transition:.2s}#side.open{transform:none}main{margin-left:0;padding:48px 12px 20px}#menu{display:block}}
+@media(max-width:380px){.language-switch{gap:3px;padding:6px}.lang-btn{font-size:12px;padding:7px 5px}.lang-btn .flag{font-size:18px}}
 @media print{#side,#menu{display:none}main{margin:0;max-width:none}section{display:block!important;page-break-before:always}.btn{display:none}details{display:block}details>div{display:block}}

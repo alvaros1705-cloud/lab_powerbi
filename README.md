@@ -21,3 +21,6 @@ Suba la carpeta a un repositorio, en *Settings → Pages* elija la rama `main` y
 ## Notas
 - El progreso se guarda en `localStorage` del navegador; no se envía nada a servicios externos.
 - La página es una simulación educativa con el CSV; no está conectada a Power BI Service.
+
+
+Actualización (17-10-2026): se añadió selector de idioma Español/English con banderas de Colombia y Reino Unido, diseño adaptable a pantallas pequeñas, y el paso faltante para crear Huella_Tecnologica mediante Referencia. Se conservaron las demás funcionalidades del laboratorio.
